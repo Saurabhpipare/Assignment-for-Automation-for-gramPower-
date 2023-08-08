@@ -38,8 +38,6 @@ public class Assignment {
 	else if(Browser.equals("Edge")) {
 	System.setProperty("webdriver.edge.driver",
 	"C:\\Users\\Saurabh\\OneDrive\\Documents\\Chromedriver\\edgedriver_win64\\msedgedriver.exe");
-	ChromeOptions co=new ChromeOptions();
-	co.addArguments("--remote-allow-origins=*");
 	driver=new EdgeDriver();
 	}
     driver.get(URL);
