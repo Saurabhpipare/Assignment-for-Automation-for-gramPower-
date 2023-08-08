@@ -2,14 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <parameter name="URL" value="https://data.grampower.com/hes/"/>
-    <parameter name="Browser" value="Chrome"/>
     <classes>
       <class name="Task.Assignment">
         <methods>
+          <include name="VerifyIcon"/>
+          <include name="Verify"/>
           <include name="CheckCredencials"/>
           <include name="BrowserInit"/>
-          <include name="VerifyMeterList"/>
+          <include name="VerifyURl"/>
+          <include name="CheckArrow"/>
+          <include name="VerifyTransformer"/>
+          <include name="VerifyEnergy"/>
         </methods>
       </class> <!-- Task.Assignment -->
     </classes>
