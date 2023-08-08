@@ -5,9 +5,14 @@
     <classes>
       <class name="Task.Assignment">
         <methods>
-          <include name="verifyRecentlyAssignedMetersList"/>
-          <include name="verifySiteArrowIcon"/>
-          <include name="verifyHomePage"/>
+          <include name="VerifyIcon"/>
+          <include name="CheckCredencials"/>
+          <include name="Verify"/>
+          <include name="BrowserInit"/>
+          <include name="VerifyURl"/>
+          <include name="CheckArrow"/>
+          <include name="VerifyEnergy"/>
+          <include name="VerifyTransformer"/>
         </methods>
       </class> <!-- Task.Assignment -->
     </classes>
